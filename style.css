@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: azure;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h3 {
+    margin-bottom: 20px;
+}
+
+.task_container {
+    display: flex;
+    margin-bottom: 3rem;
+    padding: 10px;
+}
+
+.task_container .button {
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.schedule_container {
+    background: linear-gradient(#ebf4f5, #b5c6e0);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.days_container {
+    display: flex;
+    background-color: linen;
+}
+
+.corner {
+    width: 70px;
+    height: 70px;
+    margin: 2px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #9bafd9;
+}
+
+.day {
+    width: 200px;
+    height: 100px;
+    border: solid 1px white;
+    color: #9bafd9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    text-align: center;
+}
+
+.day-active {
+    width: 200px;
+    border: solid 1px white;
+    color: white;
+    background-color: #8fec94;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.part__day {
+    display: flex;
+}
+
+.time {
+    width: 70px;
+    height: 70px;
+    color: white;
+    background-color: #7af5c2;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.task {
+    background-color: white;
+    height: 70px;
+    width: 200px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    font-size: 1rem;
+}
+
+
+.register {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    background-color: #fff;
+    padding: 30px 30px;
+    margin-left: -100%;
+    z-index: 2;
+    gap: 15px;
+    width: 400px;
+    background-color: aliceblue;
+}
+
+.register>.row {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    gap: 5px;
+}
+
+.register>.row>h1 {
+    font-size: 30px;
+}
+
+.register>.row>label {
+    font-size: 18px;
+    color: #444;
+}
+
+.register>.row>span {
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.register>.row>input,
+.register>.row textarea {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    outline: 0;
+}
+
+.register>.row>button {
+    padding: 5px 10px;
+    border: none;
+    outline: 0;
+    background-color: #444;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.register>.row>button#save {
+    background-color: #2a9d8f;
+}
+
+.register>.row>button#save:hover {
+    background-color: rgba(0, 166, 91, 0.5882352941);
+}
+
+.register>.row>button#cancel {
+    background-color: #dd4b39;
+}
+
+.register>.row>button#cancel:hover {
+    background-color: rgba(221, 75, 57, 0.5882352941);
+}
+
+.register-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #f68080;
+    color: white;
+}

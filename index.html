@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Luan's Calendar</title>
+</head>
+
+<body>
+    <div class="register">
+        <div class="row">
+            <h1 id="register-title">Create task</h1>
+            <input type="hidden" value="-1" id="task-id">
+        </div>
+        <div class="row">
+            <label>Time</label>
+            <input type="text" id="hour-task" value="12 AM" disabled>
+        </div>
+        <div class="row">
+            <label>Date</label>
+            <input type="text" id="date-task" value="01/01/2022" disabled>
+        </div>
+        
+        <div class="row">
+            <label>Title</label>
+            <input type="text" id="title">
+        </div>
+        <div class="row">
+            <label>Description</label>
+            <textarea id="description" rows="5"></textarea>
+        </div>
+        <div class="row">
+            <button id="save">Save</button>
+            <button id="cancel">Cancel</button>
+        </div>
+    </div>
+    <div id="alert-task" class="modal-alert">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 id="alert-title"></h2>
+            </div>
+            <div class="modal-body">
+                <p id="alert-date"></p>
+                <p id="alert-time"></p>
+                <p id="alert-description"></p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="task_container">
+            <div class="button" id="back" style="background-color: #a8dadc">Back</div>
+            <div class="button" id="next" style="background-color: #a8dadc">Next</div>
+            <div class="button" id="month" style="background-color: #a8dadc">Month</div>
+            <div class="button" id="year" style="background-color: #a8dadc">Year</div>
+        </div>
+        <div class="schedule_container" id="schedule-container">
+            <div class="days_container" id="dayofweek">
+            </div>
+            <div id="time">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
